@@ -24,13 +24,13 @@ Project Flash is a study aid app that allows students to create and view public 
 
 **Required Must-have Stories**
 
-* User can view study sets while not signed in
-* User can sign in for added functionality (saving sets, making sets, etc)
-* A functioning flashcard set that is easy to use
-* Home page with sets you made as well as ones you followed
-* Rating system for sets
-* Discover page with different categories of sets
-* If logged in, user Profile displays information such as user description/bio, location, date joined, count of card sets.
+* User can view study sets while not signed in ❌
+* User can sign in for added functionality (saving sets, making sets, etc) ✔️
+* A functioning flashcard set that is easy to use ❌
+* Home page with sets you made as well as ones you followed ❌
+* Rating system for sets ❌
+* Discover page with different categories of sets ❌
+* If logged in, user Profile displays information such as user description/bio, location, date joined, count of card sets. ❌
 
 **Optional Nice-to-have Stories**
 
@@ -61,15 +61,15 @@ Project Flash is a study aid app that allows students to create and view public 
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
-## When Signed In
-* Home Screen
-* Categories
-* Make a Set
-* Profile
+## When Signed In ❌
+* Home Screen ❌
+* Categories ❌
+* Make a Set ❌
+* Profile ❌
 ## When Signed Out 
-* Home Screen
-* Categories
-* Create Account/Sign In
+* Home Screen ❌
+* Categories ❌
+* Create Account/Sign In ✔️
 
 ## Optional
 * Chat Feature to Talk to Others
