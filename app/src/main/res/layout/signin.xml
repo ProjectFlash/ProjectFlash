@@ -26,7 +26,7 @@
         android:layout_height="96dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/ic_home_black_24dp" />
+        app:srcCompat="@android:drawable/ic_menu_report_image" />
 
     <ImageView
         android:id="@+id/imageView5"
