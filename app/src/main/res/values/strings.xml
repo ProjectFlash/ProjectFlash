@@ -3,4 +3,8 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+    <string name="back4app_app_id">wGgsS1hhg19ghJ3O1mWnOs21SoBZcd19fly2QcUK</string>
+    <string name="back4app_client_key">mEkXcGmiY4NQr3jQFXnRJ9782jNoOjl6bJgnlZhC</string>
 </resources>
