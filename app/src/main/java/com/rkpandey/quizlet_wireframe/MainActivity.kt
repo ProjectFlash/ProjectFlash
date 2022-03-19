@@ -31,7 +31,6 @@ class MainActivity : AppCompatActivity() {
             }
         }*/
     }
-
         // Test out making queries
  /*       fun queryPosts(){
             val query: ParseQuery<Post> = ParseQuery.getQuery(Post::class.java)
@@ -48,7 +47,6 @@ class MainActivity : AppCompatActivity() {
                         }
                     }
                 }
-
             })
     }*/
 }
