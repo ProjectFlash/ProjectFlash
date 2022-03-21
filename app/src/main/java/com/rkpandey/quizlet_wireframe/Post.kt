@@ -61,12 +61,10 @@ class Post : ParseObject() {
         return getString(KEY_SET_NAME)
     }
 
-    fun setSetName(set_name: String){
+    fun setSetName(set_name: String) {
         put(KEY_SET_NAME, set_name)
     }
     
-    // change to like count
-
     companion object{
         const val KEY_WORD = "word"
         const val KEY_DEFINITION = "definition"
