@@ -1,13 +1,10 @@
 package com.rkpandey.quizlet_wireframe
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import com.google.android.material.bottomnavigation.BottomNavigationView
+import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
 import com.parse.FindCallback
 import com.parse.ParseException
 import com.parse.ParseObject
@@ -16,6 +13,7 @@ import com.parse.ParseQuery
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContentView(R.layout.signinpage)
 
         queryPosts()

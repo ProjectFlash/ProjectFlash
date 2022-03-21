@@ -4,8 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.home.HomeFragment" >
+    android:layout_height="match_parent" >
 
     <TextView
         android:id="@+id/categories"
@@ -20,30 +19,34 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="112dp"
-        android:layout_height="96dp"
+    <ImageButton
+        android:id="@+id/homebutton"
+        android:layout_width="120dp"
+        android:layout_height="74dp"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/categoriesbutton"
         app:srcCompat="@drawable/ic_home_black_24dp" />
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="110dp"
-        android:layout_height="94dp"
-        android:layout_marginStart="12dp"
+    <ImageButton
+        android:id="@+id/categoriesbutton"
+        android:layout_width="120dp"
+        android:layout_height="74dp"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView6"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintEnd_toStartOf="@+id/accountbutton"
+        app:layout_constraintStart_toEndOf="@+id/homebutton"
         app:srcCompat="?android:attr/actionModeFindDrawable" />
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="116dp"
-        android:layout_height="94dp"
+    <ImageButton
+        android:id="@+id/accountbutton"
+        android:layout_width="120dp"
+        android:layout_height="74dp"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/categoriesbutton"
         app:srcCompat="@android:drawable/ic_menu_myplaces" />
 
     <TextView
