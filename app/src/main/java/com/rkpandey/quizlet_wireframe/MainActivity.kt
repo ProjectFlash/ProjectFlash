@@ -3,6 +3,7 @@ package com.rkpandey.quizlet_wireframe
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 import com.parse.FindCallback
@@ -13,9 +14,7 @@ import com.parse.ParseQuery
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        setContentView(R.layout.signinpage)
-
+        setContentView(R.layout.signin)
         queryPosts()
 
         // Test out Parse Connection
@@ -28,7 +27,13 @@ class MainActivity : AppCompatActivity() {
                 Log.d("MainActivity", "Object saved.")
             }
         }
+        this.findViewById<Button>(R.id.signinbutton).setOnClickListener{
+            Log.i("Test", "This works")
+            val intent = Intent(this, Signinpage::class.java)
+            startActivity(intent)
+        }
     }
+
         // Test out making queries
         fun queryPosts(){
             val query: ParseQuery<Post> = ParseQuery.getQuery(Post::class.java)

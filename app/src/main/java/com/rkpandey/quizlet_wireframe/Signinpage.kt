@@ -19,7 +19,7 @@ class Signinpage : AppCompatActivity() {
             goToMainActivity()
         }
 
-        findViewById<Button>(R.id.Submit).setOnClickListener {
+        findViewById<Button>(R.id.SignInButton).setOnClickListener {
             val username = findViewById<EditText>(R.id.EnterUsername).text.toString()
             val password = findViewById<EditText>(R.id.EnterPassword).text.toString()
             loginUser(username, password)
@@ -41,7 +41,7 @@ class Signinpage : AppCompatActivity() {
     }
 
     private fun goToMainActivity() {
-        val intent = Intent(this@Signinpage, MainActivity::class.java)
+        val intent = Intent(this@Signinpage, Homepage::class.java)
         startActivity(intent)
         finish()
     }
