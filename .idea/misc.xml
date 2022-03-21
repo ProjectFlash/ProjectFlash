@@ -3,7 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Hamzahs laptop ho/AndroidStudioProjects/QuizletProject/app/src/main/res/drawable/ic_baseline_folder_24.xml" value="0.1" />
+        <entry key="..\:/Users/Hamzahs laptop ho/AndroidStudioProjects/QuizletProject/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.1" />
+        <entry key="..\:/Users/Hamzahs laptop ho/AndroidStudioProjects/QuizletProject/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.1" />
+        <entry key="..\:/Users/Hamzahs laptop ho/AndroidStudioProjects/QuizletProject/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/Hamzahs laptop ho/AndroidStudioProjects/QuizletProject/app/src/main/res/drawable/item_set.xml" value="0.13802083333333334" />
+        <entry key="..\:/Users/Hamzahs laptop ho/AndroidStudioProjects/QuizletProject/app/src/main/res/layout/categories.xml" value="0.1796875" />
+        <entry key="..\:/Users/Hamzahs laptop ho/AndroidStudioProjects/QuizletProject/app/src/main/res/layout/createaccount.xml" value="0.1796875" />
+        <entry key="..\:/Users/Hamzahs laptop ho/AndroidStudioProjects/QuizletProject/app/src/main/res/layout/frag.xml" value="0.1" />
+        <entry key="..\:/Users/Hamzahs laptop ho/AndroidStudioProjects/QuizletProject/app/src/main/res/layout/fragment_feed.xml" value="0.1" />
+        <entry key="..\:/Users/Hamzahs laptop ho/AndroidStudioProjects/QuizletProject/app/src/main/res/layout/homepage.xml" value="0.1" />
+        <entry key="..\:/Users/Hamzahs laptop ho/AndroidStudioProjects/QuizletProject/app/src/main/res/layout/item_set.xml" value="0.1" />
         <entry key="..\:/Users/Hamzahs laptop ho/AndroidStudioProjects/QuizletProject/app/src/main/res/layout/signedinhome.xml" value="0.1296875" />
+        <entry key="..\:/Users/Hamzahs laptop ho/AndroidStudioProjects/QuizletProject/app/src/main/res/layout/signin.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/Hamzahs laptop ho/AndroidStudioProjects/QuizletProject/app/src/main/res/layout/signinpage.xml" value="0.1453125" />
         <entry key="..\:/Users/Hamzahs laptop ho/AndroidStudioProjects/quizlet_wireframe/app/src/main/res/layout/Categories.xml" value="0.14666666666666667" />
         <entry key="..\:/Users/Hamzahs laptop ho/AndroidStudioProjects/quizlet_wireframe/app/src/main/res/layout/CreateAcocunt.xml" value="0.1" />
         <entry key="..\:/Users/Hamzahs laptop ho/AndroidStudioProjects/quizlet_wireframe/app/src/main/res/layout/Home_Page.xml" value="0.16666666666666666" />

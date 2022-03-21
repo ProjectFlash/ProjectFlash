@@ -3,6 +3,7 @@ package com.rkpandey.quizlet_wireframe
 import android.app.Application
 import com.parse.Parse
 import com.parse.ParseObject
+import java.util.logging.Level.parse
 
 class ParseApplication : Application(){
     override fun onCreate() {

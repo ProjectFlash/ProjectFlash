@@ -1,4 +1,4 @@
 package com.rkpandey.quizlet_wireframe
 
-class ItemsViewModel {
+data class ItemsViewModel(val text: String) {
 }
