@@ -16,12 +16,12 @@ import com.parse.ParseQuery
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.signin)
+        setContentView(R.layout.signinpage)
 
-        //queryPosts()
+        queryPosts()
 
         // Test out Parse Connection
-/*        val firstObject = ParseObject("FirstClass")
+       val firstObject = ParseObject("FirstClass")
         firstObject.put("message", "Hey ! First message from android. Parse is now connected")
         firstObject.saveInBackground {
             if (it != null) {
@@ -29,10 +29,10 @@ class MainActivity : AppCompatActivity() {
             } else {
                 Log.d("MainActivity", "Object saved.")
             }
-        }*/
+        }
     }
         // Test out making queries
- /*       fun queryPosts(){
+        fun queryPosts(){
             val query: ParseQuery<Post> = ParseQuery.getQuery(Post::class.java)
             query.findInBackground(object: FindCallback<Post>{
                 override fun done(cards: MutableList<Post>?, e: ParseException?) {
@@ -48,5 +48,5 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
             })
-    }*/
+    }
 }
