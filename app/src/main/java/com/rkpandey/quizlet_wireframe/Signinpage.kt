@@ -16,7 +16,8 @@ class Signinpage : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.signinpage)
         if (ParseUser.getCurrentUser() != null) {
-            goToMainActivity()
+
+            goToHomeActivity()
         }
 
         findViewById<Button>(R.id.SignInButton).setOnClickListener {
@@ -31,7 +32,7 @@ class Signinpage : AppCompatActivity() {
             username, password, ({ user, e ->
                 if (user != null) {
                     Log.i(TAG, "Successfully logged in user")
-                    goToMainActivity()
+                    goToHomeActivity()
                 } else {
                     e.printStackTrace()
                     Toast.makeText(this, "Error logging in", Toast.LENGTH_SHORT).show()
@@ -40,7 +41,7 @@ class Signinpage : AppCompatActivity() {
         )
     }
 
-    private fun goToMainActivity() {
+    private fun goToHomeActivity() {
         val intent = Intent(this@Signinpage, Homepage::class.java)
         startActivity(intent)
         finish()

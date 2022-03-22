@@ -28,9 +28,9 @@ class MainActivity : AppCompatActivity() {
             }
         }
         this.findViewById<Button>(R.id.signinbutton).setOnClickListener{
-            Log.i("Test", "This works")
-            val intent = Intent(this, Signinpage::class.java)
+            val intent = Intent(this@MainActivity, Signinpage::class.java)
             startActivity(intent)
+            finish()
         }
     }
 
@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
                     } else {
                         if (cards != null) {
                             for (card in cards){
-                             Log.i("MainActivity", "Card: " + card.getWord())
+                             Log.i("MainActivity", "User: " + card.getUser())
                             }
                         }
                     }

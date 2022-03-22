@@ -1,3 +1,5 @@
+import android.content.Context
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,10 +10,10 @@ import com.rkpandey.quizlet_wireframe.ItemsViewModel
 import com.rkpandey.quizlet_wireframe.Post
 import com.rkpandey.quizlet_wireframe.R
 
-class Postadapter(private val mList: List<Post>) : RecyclerView.Adapter<Postadapter.ViewHolder>() {
+class PostAdapter(val mList: List<Post>) : RecyclerView.Adapter<PostAdapter.ViewHolder>() {
 
     // create new views
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PostAdapter.ViewHolder {
         // inflates the card_view_design view
         // that is used to hold list item
         val view = LayoutInflater.from(parent.context)
@@ -20,14 +22,10 @@ class Postadapter(private val mList: List<Post>) : RecyclerView.Adapter<Postadap
         return ViewHolder(view)
     }
 
-    // binds the list items to a view
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: PostAdapter.ViewHolder, position: Int) {
 
-        val ItemsViewModel = mList[position]
-
-        // sets the text to the textview from our itemHolder class
-        holder.tvUsername.text = ItemsViewModel.getUser().toString()
-
+        val post = mList.get(position)
+        holder.bind(post)
     }
 
     // return the number of the items in the list
@@ -37,6 +35,20 @@ class Postadapter(private val mList: List<Post>) : RecyclerView.Adapter<Postadap
 
     // Holds the views for adding it to image and text
     class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {
-        val tvUsername: TextView = itemView.findViewById(R.id.tvUsername)
+        val tvUsername: TextView
+        val tvPostBody: TextView
+        val tvDefinition: TextView
+
+        init {
+            tvUsername= itemView.findViewById(R.id.tvUsername)
+            tvPostBody = itemView.findViewById(R.id.tvPostBody)
+            tvDefinition = itemView.findViewById(R.id.tvDefinition)
+        }
+
+        fun bind(post: Post) {
+            tvUsername.text = post.getUser()?.username
+            tvPostBody.text = post.getWord()
+            tvDefinition.text = post.getDefinition()
+        }
     }
 }
