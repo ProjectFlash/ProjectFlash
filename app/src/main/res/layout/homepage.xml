@@ -6,23 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-        android:id="@+id/swipeContainer"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
 
-    <TextView
-        android:id="@+id/home"
-        android:layout_width="411dp"
-        android:layout_height="78dp"
-        android:background="@color/teal_700"
-        android:text="Home "
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
 
     <ImageButton
         android:id="@+id/homebutton"
@@ -57,11 +42,11 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvPosts"
         android:layout_width="match_parent"
-        android:layout_height="570dp"
+        android:layout_height="match_parent"
         android:layout_marginTop="1dp"
         app:layout_constraintBottom_toTopOf="@+id/categoriesbutton"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/home" />
 
 

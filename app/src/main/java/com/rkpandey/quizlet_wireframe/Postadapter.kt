@@ -17,7 +17,7 @@ class PostAdapter(val mList: List<Post>) : RecyclerView.Adapter<PostAdapter.View
         // inflates the card_view_design view
         // that is used to hold list item
         val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.item_set, parent, false)
+            .inflate(R.layout.fragment_flashcard, parent, false)
 
         return ViewHolder(view)
     }
@@ -37,18 +37,18 @@ class PostAdapter(val mList: List<Post>) : RecyclerView.Adapter<PostAdapter.View
     class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {
         val tvUsername: TextView
         val tvPostBody: TextView
-        val tvDefinition: TextView
+        //val tvDefinition: TextView
 
         init {
-            tvUsername= itemView.findViewById(R.id.tvUsername)
-            tvPostBody = itemView.findViewById(R.id.tvPostBody)
-            tvDefinition = itemView.findViewById(R.id.tvDefinition)
+            tvUsername= itemView.findViewById(R.id.info_text)
+            tvPostBody = itemView.findViewById(R.id.authorFlash)
+            //tvDefinition = itemView.findViewById(R.id.tvDefinition)
         }
 
         fun bind(post: Post) {
-            tvUsername.text = post.getUser()?.username
-            tvPostBody.text = post.getWord()
-            tvDefinition.text = post.getDefinition()
+            tvUsername.text = post.getWord()
+            tvPostBody.text = post.getDefinition()
+            //tvDefinition.text = post.getDefinition()
         }
     }
 }
