@@ -20,7 +20,7 @@ lateinit var recyclerview: RecyclerView
 var allPosts: MutableList<Post> = mutableListOf()
 
 class Homepage : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
+/*    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.homepage)
 
@@ -51,20 +51,21 @@ class Homepage : AppCompatActivity() {
         query.include(Post.KEY_USER)
         query.whereEqualTo(Post.KEY_USER, ParseUser.getCurrentUser())
         query.addDescendingOrder("createdAt")
-        query.setLimit(20)
+        query.setLimit(20)*/
+    }
 
-        query.findInBackground(object : FindCallback<Post> {
+/*        query.findInBackground(object : FindCallback<Post> {
             override fun done(posts: MutableList<Post>?, e: ParseException?) {
                 if (e != null) {
                     e.printStackTrace()
                 } else {
                     if (posts != null) {
                         allPosts.addAll(posts)
-                        adapter = PostAdapter(allPosts)
+                        adapter = PostAdapter(requireContext(), allPosts)
                         recyclerview.adapter = adapter
                         adapter.notifyDataSetChanged()
                     }
-                    }
+                    }*/
                     // ArrayList of class ItemsViewModel
 
 
@@ -78,8 +79,8 @@ class Homepage : AppCompatActivity() {
 
                     // Setting the Adapter with the recyclerview*/
                     //recyclerview.adapter = adapter }
-                }
+               // }
 
-        })
-    }}
+       // })
+   // }}
 
