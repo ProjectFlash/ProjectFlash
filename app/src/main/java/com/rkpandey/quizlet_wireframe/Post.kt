@@ -9,7 +9,7 @@ import com.parse.ParseUser
 // Definition: String
 // Category: String
 @ParseClassName("Post")
-class Post : ParseObject() {
+open class Post : ParseObject() {
     fun getWord(): String?{
         return getString(KEY_WORD)
     }
@@ -50,13 +50,7 @@ class Post : ParseObject() {
         put(KEY_PASSWORD, password)
     }
 
-    fun getLike(): Number?{
-        return getNumber(KEY_LIKE_COUNT)
-    }
 
-    fun setLike(like_count: Number){
-        put(KEY_LIKE_COUNT, like_count)
-    }
 
     fun getSetName(): String?{
         return getString(KEY_SET_NAME)
