@@ -1,17 +1,18 @@
 import android.content.Context
+import android.content.Intent
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import android.widget.TextView
+import androidx.cardview.widget.CardView
+import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
-import com.rkpandey.quizlet_wireframe.ItemsViewModel
+import com.rkpandey.quizlet_wireframe.CardSetScreen
 import com.rkpandey.quizlet_wireframe.Post
 import com.rkpandey.quizlet_wireframe.R
 
 open class PostAdapter(val context: Context, val mList: List<Post>) : RecyclerView.Adapter<PostAdapter.ViewHolder>() {
-
     // create new views
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PostAdapter.ViewHolder {
         // inflates the card_view_design view
@@ -23,9 +24,16 @@ open class PostAdapter(val context: Context, val mList: List<Post>) : RecyclerVi
     }
 
     override fun onBindViewHolder(holder: PostAdapter.ViewHolder, position: Int) {
-
         val post = mList.get(position)
         holder.bind(post)
+
+        holder.cardView.setOnClickListener {
+            val intent = (Intent(this.context, CardSetScreen::class.java))
+            Log.i("Nuts", "Text: "+ post.getSetName())
+            intent.putExtra("set", post.getSetName())
+            startActivity(this.context, intent, null)
+
+        }
     }
 
     // return the number of the items in the list
@@ -38,10 +46,12 @@ open class PostAdapter(val context: Context, val mList: List<Post>) : RecyclerVi
         val tvUsername: TextView
         val tvSetName: TextView
         //val tvDefinition: TextView
+        lateinit var cardView: CardView
 
         init {
             tvSetName= itemView.findViewById(R.id.set_name)
             tvUsername = itemView.findViewById(R.id.set_author)
+            cardView = itemView.findViewById(R.id.card_view)
             //tvDefinition = itemView.findViewById(R.id.tvDefinition)
         }
         fun bind(post: Post) {
