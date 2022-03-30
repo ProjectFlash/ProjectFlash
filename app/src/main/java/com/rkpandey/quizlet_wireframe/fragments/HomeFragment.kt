@@ -20,6 +20,8 @@ open class HomeFragment : Fragment() {
     lateinit var postsRecyclerView: RecyclerView
     lateinit var adapter: PostAdapter
     var allPosts: MutableList<Post> = mutableListOf()
+    var homePosts: MutableList<Post> = mutableListOf()
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -39,7 +41,7 @@ open class HomeFragment : Fragment() {
         // 2. create data source for each row (Post class)
         // 3. Create adapter that will bridge data and row layout
         // 4. set adapter on RecyclerView
-        adapter = PostAdapter(requireContext(), allPosts)
+        adapter = PostAdapter(requireContext(), homePosts)
         postsRecyclerView.adapter = adapter
         // 5. Set layout manager on RecyclerView
         postsRecyclerView.layoutManager = LinearLayoutManager(requireContext())
@@ -61,20 +63,47 @@ open class HomeFragment : Fragment() {
 
         query.findInBackground(object: FindCallback<Post> {
             override fun done(posts: MutableList<Post>?, e: ParseException?) {
+                var counter: Int = 0; //counter to iterate through homePosts
+
                 if (e != null) {
                     e.printStackTrace()
                 }else{
                     if (posts != null){
                         for (post in posts){
+                            if(homePosts.size == 0){ //add first post element to the home feed
+                                homePosts.add(counter, posts[0])
+                            }else if(post.getUser()?.username != homePosts[counter].getUser()?.username){ //if the name does not show up
+                                Log.i(TAG,"Comparison: "+ post.getUser()?.username+" != "+ homePosts[counter].getUser()?.username)
+                                counter++
+                                homePosts.add(counter, post)
+                                Log.i(TAG,"User: "+ post.getUser()?.username)
+                            }
                             Log.i(TAG, "Word： " + post.getWord() + ", Username: " + post.getUser()?.username)
                         }
                         allPosts.addAll(posts)
+                        Log.i(TAG, "Posts: "+ allPosts)
+                        removeDuplicates(homePosts)
                         adapter.notifyDataSetChanged()
                     }
                 }
             }
         })
     }
+
+    private fun removeDuplicates(allPosts2: MutableList<Post>) {
+        var tempPosts: MutableList<Post> = mutableListOf()
+        for(i in 0 until allPosts2!!.size-1){
+            Log.i(TAG, "Dup array: "+i)
+
+            if(allPosts2[i].getUser()?.username != allPosts2[i+1].getUser()?.username){
+                tempPosts.add(i, allPosts2[i])
+            }
+        }
+        allPosts2.clear()
+        allPosts2.addAll(tempPosts)
+        Log.i(TAG, "Dup array: "+tempPosts)
+    }
+
     companion object{
         const val TAG = "FeedFragment"
     }

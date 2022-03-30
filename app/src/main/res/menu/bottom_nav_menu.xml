@@ -4,19 +4,21 @@
 
     <item
         android:id="@+id/action_home"
-        android:icon="@android:drawable/ic_menu_compass"
+        android:icon="@drawable/ic_baseline_home_24"
         android:title="Home"
         app:showAsAction="always" />
 
     <item
         android:id="@+id/action_category"
         app:srcCompat="?android:attr/actionModeFindDrawable"
+        android:icon="@drawable/ic_baseline_category_24"
         android:title="Category"
         app:showAsAction="always" />
 
     <item
         android:id="@+id/action_profile"
         app:srcCompat="@android:drawable/ic_menu_myplaces"
+        android:icon="@drawable/ic_baseline_person_24"
         android:title="Profile"
         app:showAsAction="always" />
 </menu>
