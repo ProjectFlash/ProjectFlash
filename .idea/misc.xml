@@ -3,12 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/workspace/ProjectFlash/app/src/main/res/layout/account.xml" value="0.1" />
-        <entry key="..\:/workspace/ProjectFlash/app/src/main/res/layout/fragment_first.xml" value="0.20520833333333333" />
-        <entry key="..\:/workspace/ProjectFlash/app/src/main/res/layout/fragment_flashcard.xml" value="0.2015625" />
-        <entry key="..\:/workspace/ProjectFlash/app/src/main/res/layout/fragment_home.xml" value="0.20520833333333333" />
-        <entry key="..\:/workspace/ProjectFlash/app/src/main/res/layout/setpageexample.xml" value="0.20520833333333333" />
-        <entry key="..\:/workspace/ProjectFlash/app/src/main/res/menu/bottom_nav_menu.xml" value="0.22" />
+        <entry key="..\:/workspace2/ProjectFlash/app/src/main/res/layout/content_card_set_screen.xml" value="1.25" />
+        <entry key="..\:/workspace2/ProjectFlash/app/src/main/res/layout/content_card_set_screen2.xml" value="0.33" />
       </map>
     </option>
   </component>

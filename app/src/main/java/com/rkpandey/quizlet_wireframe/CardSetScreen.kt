@@ -15,7 +15,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.parse.FindCallback
 import com.parse.ParseException
 import com.parse.ParseQuery
-import com.rkpandey.quizlet_wireframe.databinding.ActivityCardSetScreen2Binding
 import com.rkpandey.quizlet_wireframe.fragments.HomeFragment
 
 class CardSetScreen : AppCompatActivity() {
