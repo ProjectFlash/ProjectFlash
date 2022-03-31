@@ -14,6 +14,7 @@ import com.parse.ParseQuery
 import com.rkpandey.quizlet_wireframe.Post
 import com.rkpandey.quizlet_wireframe.R
 import com.parse.ParseException
+import com.parse.ParseUser
 
 open class HomeFragment : Fragment() {
 
@@ -92,16 +93,30 @@ open class HomeFragment : Fragment() {
 
     private fun removeDuplicates(allPosts2: MutableList<Post>) {
         var tempPosts: MutableList<Post> = mutableListOf()
+        var setNames = mutableSetOf<String>()
+        var setAuthor = mutableSetOf<String>()
         for(i in 0 until allPosts2!!.size-1){
             Log.i(TAG, "Dup array: "+i)
-
-            if(allPosts2[i].getUser()?.username != allPosts2[i+1].getUser()?.username){
-                tempPosts.add(i, allPosts2[i])
+            if(allPosts2[i].getSetName() != allPosts2[i+1].getSetName()){
+                //tempPosts.add(i, allPosts2[i])
+                setNames.add(allPosts2[i].getSetName().toString())
+                setAuthor.add(allPosts2[i].getUser()?.username.toString())
             }
+        }
+        var counter = 0
+        for(name in setNames){
+            tempPosts.add(counter, Post())
+            tempPosts[counter].setSetName(name)
+            counter++
+        }
+        counter = 0
+        for(author in setAuthor){
+            tempPosts[counter].setAuthor(author)
+            counter++
         }
         allPosts2.clear()
         allPosts2.addAll(tempPosts)
-        Log.i(TAG, "Dup array: "+tempPosts)
+        Log.i(TAG, "Dup array: "+setNames)
     }
 
     companion object{

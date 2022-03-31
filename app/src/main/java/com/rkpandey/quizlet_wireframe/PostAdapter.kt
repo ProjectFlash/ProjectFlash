@@ -58,7 +58,7 @@ open class PostAdapter(val context: Context, val mList: List<Post>) : RecyclerVi
             //tvDefinition = itemView.findViewById(R.id.tvDefinition)
         }
         fun bind(post: Post) {
-            tvUsername.text = post.getUser()?.username
+            tvUsername.text = post.getAuthor()
             tvSetName.text = post.getSetName()
             //tvWord.text = post.getWord().toString()
             //tvDefinition.text = post.getDefinition()
