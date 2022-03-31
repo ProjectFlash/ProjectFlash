@@ -45,11 +45,14 @@ open class PostAdapter(val context: Context, val mList: List<Post>) : RecyclerVi
     class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {
         val tvUsername: TextView
         val tvSetName: TextView
+        //val tvWord: TextView
         //val tvDefinition: TextView
         lateinit var cardView: CardView
 
+
         init {
             tvSetName= itemView.findViewById(R.id.set_name)
+            //tvWord = itemView.findViewById(R.id.tvWord)
             tvUsername = itemView.findViewById(R.id.set_author)
             cardView = itemView.findViewById(R.id.card_view)
             //tvDefinition = itemView.findViewById(R.id.tvDefinition)
@@ -57,6 +60,7 @@ open class PostAdapter(val context: Context, val mList: List<Post>) : RecyclerVi
         fun bind(post: Post) {
             tvUsername.text = post.getUser()?.username
             tvSetName.text = post.getSetName()
+            //tvWord.text = post.getWord().toString()
             //tvDefinition.text = post.getDefinition()
         }
     }

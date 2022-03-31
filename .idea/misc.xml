@@ -3,8 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/workspace2/ProjectFlash/app/src/main/res/layout/cardset_recyclerview.xml" value="0.18" />
         <entry key="..\:/workspace2/ProjectFlash/app/src/main/res/layout/content_card_set_screen.xml" value="1.25" />
         <entry key="..\:/workspace2/ProjectFlash/app/src/main/res/layout/content_card_set_screen2.xml" value="0.33" />
+        <entry key="..\:/workspace2/ProjectFlash/app/src/main/res/layout/createaccount.xml" value="0.1" />
+        <entry key="..\:/workspace2/ProjectFlash/app/src/main/res/layout/flash_animation.xml" value="0.33" />
+        <entry key="..\:/workspace2/ProjectFlash/app/src/main/res/layout/flashcard_back.xml" value="0.14" />
+        <entry key="..\:/workspace2/ProjectFlash/app/src/main/res/layout/flashcard_front.xml" value="0.25" />
+        <entry key="..\:/workspace2/ProjectFlash/app/src/main/res/layout/fragment_flashcard.xml" value="0.25" />
+        <entry key="..\:/workspace2/ProjectFlash/app/src/main/res/layout/fragment_set.xml" value="0.19384057971014493" />
       </map>
     </option>
   </component>

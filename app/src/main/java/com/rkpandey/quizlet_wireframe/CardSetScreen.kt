@@ -20,19 +20,19 @@ import com.rkpandey.quizlet_wireframe.fragments.HomeFragment
 class CardSetScreen : AppCompatActivity() {
     private lateinit var rvCardSet: RecyclerView
     private val posts = mutableListOf<Post>()
-    lateinit var adapter: PostAdapter
+    lateinit var adapter: SetAdapter
     lateinit var setName: String
     var homePosts: MutableList<Post> = mutableListOf()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.fragment_home)
+        setContentView(R.layout.cardset_recyclerview)
         setName = intent.getStringExtra("set").toString()
         Log.i("Deez", "Set name: "+setName)
 
 
-        rvCardSet = findViewById(R.id.rvPosts)
-        adapter = PostAdapter(this, homePosts)
+        rvCardSet = findViewById(R.id.rvSetPosts)
+        adapter = SetAdapter(this, homePosts)
         rvCardSet.adapter = adapter
         rvCardSet.layoutManager = LinearLayoutManager(this)
 

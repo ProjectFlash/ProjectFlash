@@ -6,7 +6,7 @@
     android:layout_height="wrap_content">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/card_view"
+        android:id="@+id/cvFront"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_gravity="center"
@@ -18,10 +18,10 @@
         tools:ignore="MissingConstraints">
 
         <TextView
-            android:id="@+id/set_name"
+            android:id="@+id/tvWord"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="75dp"
             android:text="CS101"
             android:textAlignment="center"
             android:textColor="#000000"
@@ -29,14 +29,15 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/set_author"
-            android:layout_width="match_parent"
+            android:id="@+id/textDefinition"
+            android:layout_width="367dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="120dp"
-            android:text="Saul Goodman"
-            android:textAlignment="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="70dp"
+            android:text="Project Flash is a study aid app that allows students to create and view public flashcard sets in a variety of subjects. Users can share, create and save flash card sets offline to their devices."
             android:textColor="#000000"
-            android:textSize="14dp" />
+            android:visibility="invisible" />
+
     </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
