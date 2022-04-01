@@ -6,24 +6,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ArrayAdapter
-import android.widget.Spinner
-import android.widget.TextView
+import android.widget.*
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.parse.ParseUser
 import com.rkpandey.quizlet_wireframe.R
 import java.lang.Exception
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [MakeSetFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class MakeSetFragment : Fragment() {
 
     override fun onCreateView(
@@ -53,7 +41,22 @@ class MakeSetFragment : Fragment() {
             Log.e("Create", "Error: "+e)
         }
 
+        val submitButton: Button
+        val addWordButton: Button
+        submitButton = view.findViewById<Button>(R.id.btnSubmit)
+        addWordButton = view.findViewById<Button>(R.id.btnAddWord)
+        submitButton.setOnClickListener{
+            Toast.makeText(requireContext(), "Clicked the submit button", Toast.LENGTH_SHORT).show()
+        }
+
+        addWordButton.setOnClickListener {
+            Toast.makeText(requireContext(), "Clicked the add button", Toast.LENGTH_SHORT).show()
+
+        }
+
     }
+
+
 
 
 
