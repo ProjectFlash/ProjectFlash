@@ -14,6 +14,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.parse.*
 import com.rkpandey.quizlet_wireframe.fragments.CategoryFragment
 import com.rkpandey.quizlet_wireframe.fragments.HomeFragment
+import com.rkpandey.quizlet_wireframe.fragments.MakeSetFragment
 import com.rkpandey.quizlet_wireframe.fragments.ProfileFragment
 
 class MainActivity : AppCompatActivity() {
@@ -39,6 +40,9 @@ class MainActivity : AppCompatActivity() {
                 R.id.action_profile -> {
                     // Go to Profile
                     fragmentToShow = ProfileFragment()
+                }
+                R.id.action_create->{
+                    fragmentToShow = MakeSetFragment()
                 }
             }
             if (fragmentToShow != null){

@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/workspace2/ProjectFlash/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.22135416666666666" />
+        <entry key="..\:/workspace2/ProjectFlash/app/src/main/res/layout/account.xml" value="0.20520833333333333" />
         <entry key="..\:/workspace2/ProjectFlash/app/src/main/res/layout/cardset_recyclerview.xml" value="0.18" />
         <entry key="..\:/workspace2/ProjectFlash/app/src/main/res/layout/content_card_set_screen.xml" value="1.25" />
         <entry key="..\:/workspace2/ProjectFlash/app/src/main/res/layout/content_card_set_screen2.xml" value="0.33" />
@@ -10,10 +12,22 @@
         <entry key="..\:/workspace2/ProjectFlash/app/src/main/res/layout/flash_animation.xml" value="0.33" />
         <entry key="..\:/workspace2/ProjectFlash/app/src/main/res/layout/flashcard_back.xml" value="0.14" />
         <entry key="..\:/workspace2/ProjectFlash/app/src/main/res/layout/flashcard_front.xml" value="0.25" />
+        <entry key="..\:/workspace2/ProjectFlash/app/src/main/res/layout/fragment_category.xml" value="0.20520833333333333" />
         <entry key="..\:/workspace2/ProjectFlash/app/src/main/res/layout/fragment_flashcard.xml" value="0.25" />
+        <entry key="..\:/workspace2/ProjectFlash/app/src/main/res/layout/fragment_home.xml" value="0.20520833333333333" />
+        <entry key="..\:/workspace2/ProjectFlash/app/src/main/res/layout/fragment_make_set.xml" value="0.20520833333333333" />
+        <entry key="..\:/workspace2/ProjectFlash/app/src/main/res/layout/fragment_profile.xml" value="0.20520833333333333" />
         <entry key="..\:/workspace2/ProjectFlash/app/src/main/res/layout/fragment_set.xml" value="0.19384057971014493" />
+        <entry key="..\:/workspace2/ProjectFlash/app/src/main/res/layout/homepage.xml" value="0.20520833333333333" />
+        <entry key="..\:/workspace2/ProjectFlash/app/src/main/res/layout/item_set.xml" value="0.20520833333333333" />
+        <entry key="..\:/workspace2/ProjectFlash/app/src/main/res/layout/makeset.xml" value="0.1" />
         <entry key="..\:/workspace2/ProjectFlash/app/src/main/res/layout/setpage.xml" value="0.19384057971014493" />
+        <entry key="..\:/workspace2/ProjectFlash/app/src/main/res/layout/setpageexample.xml" value="0.20520833333333333" />
+        <entry key="..\:/workspace2/ProjectFlash/app/src/main/res/layout/signedincateg.xml" value="0.20520833333333333" />
+        <entry key="..\:/workspace2/ProjectFlash/app/src/main/res/layout/signedinhome.xml" value="0.20520833333333333" />
         <entry key="..\:/workspace2/ProjectFlash/app/src/main/res/layout/signin.xml" value="0.19384057971014493" />
+        <entry key="..\:/workspace2/ProjectFlash/app/src/main/res/layout/signinpage.xml" value="0.20520833333333333" />
+        <entry key="..\:/workspace2/ProjectFlash/app/src/main/res/menu/bottom_nav_menu.xml" value="0.33" />
       </map>
     </option>
   </component>

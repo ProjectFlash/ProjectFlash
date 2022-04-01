@@ -8,6 +8,7 @@
         android:title="Home"
         app:showAsAction="always" />
 
+
     <item
         android:id="@+id/action_category"
         app:srcCompat="?android:attr/actionModeFindDrawable"
@@ -16,9 +17,17 @@
         app:showAsAction="always" />
 
     <item
+        android:id="@+id/action_create"
+        app:srcCompat="?android:attr/actionModeFindDrawable"
+        android:icon="@drawable/ic_baseline_add_circle_24"
+        android:title="Create Set"
+        app:showAsAction="always" />
+
+    <item
         android:id="@+id/action_profile"
         app:srcCompat="@android:drawable/ic_menu_myplaces"
         android:icon="@drawable/ic_baseline_person_24"
         android:title="Profile"
         app:showAsAction="always" />
+
 </menu>
