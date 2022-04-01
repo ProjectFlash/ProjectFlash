@@ -50,6 +50,8 @@ open class Post : ParseObject() {
         put(KEY_PASSWORD, password)
     }
 
+
+
     fun setAuthor(author: String){
         put("author", author)
     }
