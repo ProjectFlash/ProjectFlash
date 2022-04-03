@@ -24,6 +24,7 @@ open class HomeFragment : Fragment() {
     var homePosts: MutableList<Post> = mutableListOf()
 
 
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -91,7 +92,7 @@ open class HomeFragment : Fragment() {
         })
     }
 
-    private fun removeDuplicates(allPosts2: MutableList<Post>) {
+    open fun removeDuplicates(allPosts2: MutableList<Post>) {
         var tempPosts: MutableList<Post> = mutableListOf()
         var setNames = mutableSetOf<String>()
         var setAuthor: MutableList<String>
@@ -129,4 +130,6 @@ open class HomeFragment : Fragment() {
     companion object{
         const val TAG = "FeedFragment"
     }
+
+    open fun removeDuplicates() {}
 }
