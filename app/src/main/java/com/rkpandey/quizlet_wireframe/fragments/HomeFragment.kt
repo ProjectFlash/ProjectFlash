@@ -94,7 +94,8 @@ open class HomeFragment : Fragment() {
     private fun removeDuplicates(allPosts2: MutableList<Post>) {
         var tempPosts: MutableList<Post> = mutableListOf()
         var setNames = mutableSetOf<String>()
-        var setAuthor = mutableSetOf<String>()
+        var setAuthor: MutableList<String>
+        setAuthor = mutableListOf()
         for(i in 0 until allPosts2!!.size-1){
             Log.i(TAG, "Dup array: "+i)
             if(allPosts2[i].getSetName() != allPosts2[i+1].getSetName()){
@@ -109,11 +110,17 @@ open class HomeFragment : Fragment() {
             tempPosts[counter].setSetName(name)
             counter++
         }
+
         counter = 0
+        while(counter <= setNames.size-1){
+            tempPosts[counter].setAuthor(setAuthor[counter])
+            counter++
+        }
+        /*counter = 0
         for(author in setAuthor){
             tempPosts[counter].setAuthor(author)
             counter++
-        }
+        }*/
         allPosts2.clear()
         allPosts2.addAll(tempPosts)
         Log.i(TAG, "Dup array: "+setNames)
