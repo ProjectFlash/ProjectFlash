@@ -42,7 +42,7 @@ class Signinpage : AppCompatActivity() {
     }
 
     private fun goToHomeActivity() {
-        val intent = Intent(this@Signinpage, Homepage::class.java)
+        val intent = Intent(this@Signinpage, MainActivity::class.java)
         startActivity(intent)
         finish()
     }

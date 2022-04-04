@@ -48,6 +48,7 @@ open class HomeFragment : Fragment() {
         // 5. Set layout manager on RecyclerView
         postsRecyclerView.layoutManager = LinearLayoutManager(requireContext())
 
+        //Log.i(TAG, "Current User: "+ ParseUser.getCurrentUser().username)
         queryPosts()
     }
 
