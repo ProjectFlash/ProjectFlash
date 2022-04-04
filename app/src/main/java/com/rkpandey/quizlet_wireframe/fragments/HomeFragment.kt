@@ -15,6 +15,13 @@ import com.rkpandey.quizlet_wireframe.Post
 import com.rkpandey.quizlet_wireframe.R
 import com.parse.ParseException
 import com.parse.ParseUser
+//
+//lateinit var adapter: PostAdapter
+//lateinit var recyclerview: RecyclerView
+//var allPosts: MutableList<Post> = mutableListOf()
+
+
+
 
 open class HomeFragment : Fragment() {
 

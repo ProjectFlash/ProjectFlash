@@ -16,8 +16,14 @@ import com.parse.ParseQuery
 import com.parse.ParseUser
 import com.rkpandey.quizlet_wireframe.Post
 import com.rkpandey.quizlet_wireframe.R
+/*
 import com.rkpandey.quizlet_wireframe.adapter
-import com.rkpandey.quizlet_wireframe.allPosts
+import com.rkpandey.quizlet_wireframe.allPosts*/
+
+lateinit var adapter: PostAdapter
+lateinit var recyclerview: RecyclerView
+var allPosts: MutableList<Post> = mutableListOf()
+
 
 class ProfileFragment: Fragment(){
     var totalPosts: Int = 0
