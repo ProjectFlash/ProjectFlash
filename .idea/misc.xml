@@ -7,9 +7,12 @@
         <entry key="..\:/Users/duan9/AndroidStudioProjects/ProjectFlash/app/src/main/res/layout/activity_main.xml" value="0.2421875" />
         <entry key="..\:/Users/duan9/AndroidStudioProjects/ProjectFlash/app/src/main/res/layout/cardset_recyclerview.xml" value="0.1884498480243161" />
         <entry key="..\:/Users/duan9/AndroidStudioProjects/ProjectFlash/app/src/main/res/layout/categories.xml" value="0.1884498480243161" />
+        <entry key="..\:/Users/duan9/AndroidStudioProjects/ProjectFlash/app/src/main/res/layout/category.xml" value="0.1" />
+        <entry key="..\:/Users/duan9/AndroidStudioProjects/ProjectFlash/app/src/main/res/layout/category_item.xml" value="0.1" />
         <entry key="..\:/Users/duan9/AndroidStudioProjects/ProjectFlash/app/src/main/res/layout/flashcard_front.xml" value="0.1884498480243161" />
-        <entry key="..\:/Users/duan9/AndroidStudioProjects/ProjectFlash/app/src/main/res/layout/fragment_category.xml" value="0.2807971014492754" />
-        <entry key="..\:/Users/duan9/AndroidStudioProjects/ProjectFlash/app/src/main/res/layout/fragment_home.xml" value="0.2807971014492754" />
+        <entry key="..\:/Users/duan9/AndroidStudioProjects/ProjectFlash/app/src/main/res/layout/fragment_category.xml" value="0.1" />
+        <entry key="..\:/Users/duan9/AndroidStudioProjects/ProjectFlash/app/src/main/res/layout/fragment_flashcard.xml" value="0.1" />
+        <entry key="..\:/Users/duan9/AndroidStudioProjects/ProjectFlash/app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="..\:/Users/duan9/AndroidStudioProjects/ProjectFlash/app/src/main/res/layout/fragment_make_set.xml" value="0.1884498480243161" />
         <entry key="..\:/Users/duan9/AndroidStudioProjects/ProjectFlash/app/src/main/res/layout/fragment_profile.xml" value="0.2807971014492754" />
         <entry key="..\:/Users/duan9/AndroidStudioProjects/ProjectFlash/app/src/main/res/layout/fragment_set.xml" value="0.2807971014492754" />

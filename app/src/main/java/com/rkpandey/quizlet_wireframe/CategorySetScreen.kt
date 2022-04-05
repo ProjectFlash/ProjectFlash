@@ -1,35 +1,26 @@
 package com.rkpandey.quizlet_wireframe
 
-import PostAdapter
 import android.os.Bundle
 import android.util.Log
-import android.view.View
-import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.navigateUp
-import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.parse.FindCallback
 import com.parse.ParseException
 import com.parse.ParseQuery
-import com.rkpandey.quizlet_wireframe.fragments.HomeFragment
 
-class CardSetScreen : AppCompatActivity() {
+class CategorySetScreen : AppCompatActivity() {
+
     private lateinit var rvCardSet: RecyclerView
     private val posts = mutableListOf<Post>()
     lateinit var adapter: SetAdapter
-    lateinit var setName: String
     lateinit var catName: String
     var homePosts: MutableList<Post> = mutableListOf()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.cardset_recyclerview)
-        setName = intent.getStringExtra("set").toString()
-        catName = intent.getStringExtra("category").toString()
+        setContentView(R.layout.homepage)
+        //catName = intent.getStringExtra("set").toString()
 
         rvCardSet = findViewById(R.id.rvSetPosts)
         adapter = SetAdapter(this, homePosts)
@@ -38,7 +29,6 @@ class CardSetScreen : AppCompatActivity() {
 
         queryPosts()
     }
-
 
     // Query for all post in the server
     open fun queryPosts() {
@@ -61,13 +51,9 @@ class CardSetScreen : AppCompatActivity() {
                 }else{
                     if (posts != null){
                         for (post in posts){
-                            if(post.getSetName() == setName){ //if the name does not show up
+                            if(post.getCategory() == catName){ //if the name does not show up
                                 homePosts.add(counter, post)
                             }
-                            if (post.getCategory() == catName){
-                                homePosts.add(counter, post)
-                            }
-
                         }
                         //removeDuplicates(homePosts)
                         adapter.notifyDataSetChanged()
@@ -75,9 +61,6 @@ class CardSetScreen : AppCompatActivity() {
                 }
             }
         })
-    }
-    companion object{
-        const val TAG = "CardSetScreen"
     }
 
 

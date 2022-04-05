@@ -20,17 +20,12 @@ import com.parse.ParseUser
 //lateinit var recyclerview: RecyclerView
 //var allPosts: MutableList<Post> = mutableListOf()
 
-
-
-
 open class HomeFragment : Fragment() {
 
     lateinit var postsRecyclerView: RecyclerView
     lateinit var adapter: PostAdapter
     var allPosts: MutableList<Post> = mutableListOf()
     var homePosts: MutableList<Post> = mutableListOf()
-
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
