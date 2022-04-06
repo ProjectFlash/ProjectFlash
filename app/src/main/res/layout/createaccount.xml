@@ -20,32 +20,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="112dp"
-        android:layout_height="96dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/ic_home_black_24dp" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="110dp"
-        android:layout_height="94dp"
-        android:layout_marginStart="12dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView6"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
-        app:srcCompat="?android:attr/actionModeFindDrawable" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="116dp"
-        android:layout_height="94dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_myplaces" />
-
 
     <EditText
         android:id="@+id/EnterUsername"
@@ -54,7 +28,7 @@
         android:layout_marginTop="110dp"
         android:ems="5"
         android:hint="Username"
-        android:inputType="textPassword"
+        android:inputType="text"
         android:textAlignment="center"
         android:textColorHint="@color/black"
         android:textSize="40dp"
@@ -76,6 +50,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/EnterUsername" />
+
     <EditText
         android:id="@+id/ReenterPassword"
         android:layout_width="wrap_content"
@@ -92,7 +67,7 @@
         app:layout_constraintTop_toBottomOf="@+id/EnterPassword" />
 
     <Button
-        android:id="@+id/Submit"
+        android:id="@+id/createacctBtn"
         android:layout_width="110dp"
         android:layout_height="60dp"
         android:text="Submit"
@@ -100,4 +75,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ReenterPassword" />
+
+    <TextView
+        android:id="@+id/passwordError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:text="Password Don't Match. Re-enter !"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/EnterUsername"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CreateAccount" />
 </androidx.constraintlayout.widget.ConstraintLayout>
